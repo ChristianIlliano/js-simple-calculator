@@ -1,18 +1,15 @@
-// let operations = 0;
-// divNumberElem = document.querySelector(".number");
-// divSymbolElem = document.querySelector(".symbol");
-
-// // create number
-//     for(i=1; i<=11; i++){
-//         const newNumber = (i);
-//         console.log(newNumber);
-//         divNumberElem.append(newNumber);
-//     }
-
-// //  create symbol
-//     for(i=1; i<=5; i++){
-//         const newSymbol = createSymbol(i);
-//         console.log(newSymbol);
-//         divSymbolElem.append(newSymbol);
-//     }
-    
+const numbers = document.querySelectorAll(".button-main");
+const display = document.querySelector(".black-display")
+const operator = document.querySelectorAll(".button-secondary");
+const span = document.querySelector("span")
+ let firstNum = "";
+ 
+ for (let i = 0; i < numbers.length; i++) {
+     let btnNumber = numbers[i]
+    btnNumber.addEventListener("click", function () {
+    span.classList.add("hidden");
+    firstNum += btnNumber.innerHTML
+    console.log(this.innerHTML);
+    display.innerHTML += btnNumber.innerHTML;
+     })
+}
