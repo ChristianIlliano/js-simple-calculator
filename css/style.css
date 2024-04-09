@@ -55,6 +55,15 @@
         width: calc(100% - 10px);
     }
 
+    .button-reset {
+        border-radius: 5px;
+        margin: 5px;
+        padding: 30px 30px;
+        font-size: 36px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        width: calc(100% - 10px);
+    }
+
 .header {
         border-top-left-radius:20px;
         border-top-right-radius:20px;
