@@ -40,17 +40,19 @@ equal.addEventListener('click', function() {
             break;
 
         case '*': display.innerHTML = parseInt(firstNum) * parseInt(display.innerHTML);
-            console.log('sottrazione');
+            console.log('moltiplicazione');
             break;
 
         case '/': display.innerHTML = parseInt(firstNum) / parseInt(display.innerHTML);
-            console.log('sottrazione');
+            console.log('divisione');
             break;
     
         default:
             break;
     }
     console.warn(parseInt(firstNum), operatorValue, parseInt(display.innerHTML));
+    display.innerHTML = parseInt(display.innerHTML)
+
 });
 
 reset.addEventListener('click', function() {
